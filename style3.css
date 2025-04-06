@@ -45,6 +45,7 @@ html, body {
     padding: 5px 10px;
     border-radius: 4px;
     color: #dcdcdc;
+    text-decoration: none; 
   }
   
   .hint {
