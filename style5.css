@@ -7,33 +7,33 @@ html, body {
   
   .soderzh {
     padding: 20px;
-    text-align: left;  /* Выравнивание по левому краю */
+    text-align: left;   
     height: 100%;
   }
   
   h1 {
     font-size: 2em;
-    margin-bottom: 10px; /* Уменьшен отступ */
+    margin-bottom: 10px;  
   }
   
   .description {
     font-size: 1.2em;
     color: #555;
-    margin-bottom: 10px; /* Уменьшен отступ */
+    margin-bottom: 10px;  
   }
   
   .code-container {
     margin-top: 10px;
     background-color: #1e1e1e;
-    padding: 10px 15px; /* Уменьшен отступ внутри контейнера */
+    padding: 10px 15px;  
     border-radius: 8px;
-    width: 100%;
-    max-width: 800px; /* Ограничена максимальная ширина */
+    width: 80%;
+    max-width: 800px; 
   }
   
   .code-block {
     font-family: 'Courier New', monospace;
-    font-size: 1em; /* Уменьшен размер шрифта */
+    font-size: 1em; 
     color: #dcdcdc;
     white-space: pre-wrap;
     word-wrap: break-word;
