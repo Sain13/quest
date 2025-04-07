@@ -53,11 +53,12 @@ h1 {
   font-family: 'Courier New', monospace;
   font-size: 1.4em;
   color: #dcdcdc;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre; /* НЕ переносить строки */
+  overflow-x: auto; /* Горизонтальный скролл при необходимости */
   line-height: 1.6;
   margin: 20px 0;
 }
+
 
 .keyword { color: #4FC3F7; }
 .number { color: #A5D6A7; }
