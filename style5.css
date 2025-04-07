@@ -5,6 +5,9 @@ html, body {
   height: 100%;
   background-color: #0a0a0a;
   color: #f0f0f0;
+  display: flex;
+  justify-content: center;  /* Центрирование содержимого по горизонтали */
+  align-items: center;      /* Центрирование содержимого по вертикали */
 }
 
 .soderzh {
@@ -12,32 +15,32 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 15px; /* Уменьшил отступы */
+  padding: 30px 15px;
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
+  width: 100%;              /* Растягиваем контейнер на всю ширину */
   overflow: auto;
 }
 
 h1 {
-  font-size: 1.8em; /* Уменьшил размер заголовка */
+  font-size: 1.8em;  /* Уменьшил размер заголовка */
   margin: 30px 0 20px;
   font-weight: bold;
 }
 
 .subtext {
-  font-size: 1em; /* Уменьшил размер текста */
+  font-size: 1em;  /* Уменьшил размер текста */
   color: #888;
   margin-bottom: 20px;
 }
 
 .task-text {
-  font-size: 1.3em; /* Уменьшил размер текста */
+  font-size: 1.3em;  /* Уменьшил размер текста */
   margin-bottom: 30px;
 }
 
 .code-container {
-  width: 100%;
   background-color: #1e1e1e;
   padding: 15px;
   border-radius: 12px;
@@ -45,16 +48,17 @@ h1 {
   text-align: left;
   box-shadow: inset 4px 0 0 #333, inset -4px 0 0 #333;
   margin-bottom: 40px;
+  width: 100%;  /* Растягиваем контейнер на всю ширину */
 }
 
 .code-block {
   font-family: 'Courier New', monospace;
-  font-size: 1em; /* Уменьшил размер шрифта */
+  font-size: 1em;  /* Уменьшил размер шрифта */
   color: #dcdcdc;
   white-space: pre-wrap;
   word-wrap: break-word;
   margin: 10px 0;
-  line-height: 1.4; /* Уменьшил межстрочный интервал */
+  line-height: 1.4;  /* Уменьшил межстрочный интервал */
   padding: 0;
 }
 
@@ -64,7 +68,7 @@ h1 {
 .function { color: #FFF59D; }
 
 .hint {
-  font-size: 1em; /* Уменьшил размер подсказки */
+  font-size: 1em;  /* Уменьшил размер подсказки */
   color: #dcdcdc;
   margin-top: 10px;
   font-weight: bold;
