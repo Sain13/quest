@@ -10,8 +10,9 @@ html, body {
 .soderzh {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 50px 20px 40px;
+  padding: 50px 20px 80px;
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
@@ -54,11 +55,10 @@ h1 {
   color: #dcdcdc;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 0;
+  margin: 20px 0;
   line-height: 1.6;
 }
 
-/* Подсветка кода */
 .keyword {
   color: #4FC3F7;
 }
