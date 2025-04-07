@@ -12,15 +12,16 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px 20px;
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
+  overflow: auto;
 }
 
 h1 {
   font-size: 2.5em;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -28,24 +29,24 @@ h1 {
 .subtext {
   font-size: 1.1em;
   color: #888;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .task-text {
   font-size: 1.7em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .code-container {
   width: 100%;
   max-width: 900px;
   background-color: #1e1e1e;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   overflow-x: auto;
   text-align: left;
   box-shadow: inset 4px 0 0 #333, inset -4px 0 0 #333;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .code-block {
@@ -54,8 +55,9 @@ h1 {
   color: #dcdcdc;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 10px 0;
+  margin: 0; /* Убираем отступы вокруг кода */
   line-height: 1.6;
+  padding: 0; /* Убираем внутренние отступы */
 }
 
 .keyword {
@@ -77,15 +79,16 @@ h1 {
 .hint {
   font-size: 1.2em;
   color: #dcdcdc;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 /* Медиазапросы для адаптации на мобильных */
 @media (max-width: 768px) {
   h1 {
     font-size: 2em;
+    margin-top: 40px;
   }
 
   .subtext {
@@ -94,25 +97,25 @@ h1 {
 
   .task-text {
     font-size: 1.4em;
+    margin-bottom: 30px;
   }
 
   .code-container {
     max-width: 100%;
-    padding: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
   }
 
   .code-block {
     font-size: 1.2em;
-  }
-
-  .hint {
-    font-size: 1em;
+    margin: 0;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8em;
+    margin-top: 30px;
   }
 
   .subtext {
@@ -121,17 +124,16 @@ h1 {
 
   .task-text {
     font-size: 1.3em;
+    margin-bottom: 20px;
   }
 
   .code-container {
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
   }
 
   .code-block {
     font-size: 1.1em;
-  }
-
-  .hint {
-    font-size: 0.9em;
+    margin: 0;
   }
 }
