@@ -5,61 +5,56 @@ html, body {
   height: 100%;
   background-color: #0a0a0a;
   color: #f0f0f0;
-  display: flex;
-  justify-content: center;  /* Центрирование содержимого по горизонтали */
-  align-items: center;      /* Центрирование содержимого по вертикали */
 }
 
 .soderzh {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 30px 15px;
+  padding: 50px 40px;
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
-  width: 100%;              /* Растягиваем контейнер на всю ширину */
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 1.8em;  /* Уменьшил размер заголовка */
-  margin: 30px 0 20px;
+  font-size: 2.5em;
+  margin: 50px 0 20px;
   font-weight: bold;
 }
 
 .subtext {
-  font-size: 1em;  /* Уменьшил размер текста */
+  font-size: 1.1em;
   color: #888;
-  margin-bottom: 20px;
-}
-
-.task-text {
-  font-size: 1.3em;  /* Уменьшил размер текста */
   margin-bottom: 30px;
 }
 
+.task-text {
+  font-size: 1.7em;
+  margin-bottom: 40px;
+}
+
 .code-container {
+  width: 100%;
   background-color: #1e1e1e;
-  padding: 15px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 16px;
   overflow-x: auto;
   text-align: left;
   box-shadow: inset 4px 0 0 #333, inset -4px 0 0 #333;
-  margin-bottom: 40px;
-  width: 100%;  /* Растягиваем контейнер на всю ширину */
+  margin-bottom: 60px;
 }
 
 .code-block {
   font-family: 'Courier New', monospace;
-  font-size: 1em;  /* Уменьшил размер шрифта */
+  font-size: 1.4em;
   color: #dcdcdc;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 10px 0;
-  line-height: 1.4;  /* Уменьшил межстрочный интервал */
-  padding: 0;
+  line-height: 1.6;
+  margin: 20px 0;
 }
 
 .keyword { color: #4FC3F7; }
@@ -68,27 +63,25 @@ h1 {
 .function { color: #FFF59D; }
 
 .hint {
-  font-size: 1em;  /* Уменьшил размер подсказки */
+  font-size: 1.2em;
   color: #dcdcdc;
   margin-top: 10px;
   font-weight: bold;
   text-align: center;
 }
 
-/* Адаптивность под планшеты */
+/* Планшеты */
 @media (max-width: 768px) {
-  h1 { font-size: 1.6em; margin-top: 20px; }
-  .subtext { font-size: 0.9em; }
-  .task-text { font-size: 1.2em; margin-bottom: 20px; }
-  .code-container { padding: 15px; margin-bottom: 30px; }
-  .code-block { font-size: 0.9em; margin: 10px 0; }
+  h1 { font-size: 2em; margin-top: 40px; }
+  .task-text { font-size: 1.4em; margin-bottom: 30px; }
+  .code-container { padding: 25px; margin-bottom: 40px; }
+  .code-block { font-size: 1.3em; }
 }
 
-/* Адаптивность под смартфоны */
+/* Смартфоны */
 @media (max-width: 480px) {
-  h1 { font-size: 1.4em; margin-top: 15px; }
-  .subtext { font-size: 0.8em; }
-  .task-text { font-size: 1.1em; margin-bottom: 15px; }
-  .code-container { padding: 10px; margin-bottom: 20px; }
-  .code-block { font-size: 0.8em; margin: 10px 0; }
+  h1 { font-size: 1.8em; margin-top: 30px; }
+  .task-text { font-size: 1.3em; margin-bottom: 20px; }
+  .code-container { padding: 20px; margin-bottom: 30px; }
+  .code-block { font-size: 1.2em; }
 }
