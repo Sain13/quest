@@ -5,7 +5,7 @@ html, body {
   height: 100%;
   background-color: #0a0a0a;
   color: #f0f0f0;
-  overflow: hidden; /* Убираем скролл */
+  overflow: hidden;
 }
 
 .soderzh {
@@ -17,13 +17,12 @@ html, body {
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
-  overflow: visible;
-  transform: scale(1.05); /* Ближе */
-  transform-origin: top center; /* Центрируем масштаб */
+  overflow-x: hidden;
+  transform: scale(0.9);  /* Эффект отдалённости */
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 50px 0 20px;
   font-weight: bold;
 }
@@ -31,7 +30,7 @@ h1 {
 .subtext {
   font-size: 1.1em;
   color: #888;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .task-text {
@@ -40,14 +39,14 @@ h1 {
 }
 
 .code-container {
-  width: 90%;
+  width: 100%; 
   background-color: #1e1e1e;
-  padding: 30px;
+  padding: 10px;
   border-radius: 16px;
   overflow-x: auto;
   text-align: left;
   box-shadow: inset 4px 0 0 #333, inset -4px 0 0 #333;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .code-block {
@@ -66,29 +65,25 @@ h1 {
 .function { color: #FFF59D; }
 
 .hint {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #dcdcdc;
-  margin-top: 10px;
+ 
+  text-align: left;
   font-weight: bold;
-  text-align: center;
 }
 
-/* Адаптив под планшеты */
+/* Планшеты */
 @media (max-width: 768px) {
-  .soderzh {
-    transform: scale(1); /* На мобилках без масштабирования */
-  }
-
-  h1 { font-size: 2em; margin-top: 40px; }
+  h1 { font-size: 1.5em; margin-top: 40px; }
   .task-text { font-size: 1.4em; margin-bottom: 30px; }
   .code-container { padding: 25px; margin-bottom: 40px; }
-  .code-block { font-size: 1.3em; }
+  .code-block { font-size: 1.2em; }
 }
 
-/* Адаптив под телефоны */
+/* Смартфоны */
 @media (max-width: 480px) {
-  h1 { font-size: 1.8em; margin-top: 30px; }
-  .task-text { font-size: 1.3em; margin-bottom: 20px; }
-  .code-container { padding: 20px; margin-bottom: 30px; }
-  .code-block { font-size: 1.2em; }
+  h1 { font-size: 1.5em; margin-top: 30px; }
+  .task-text { font-size: 1.05em; margin-bottom: 30px; }
+  .code-container { padding: 20px; margin-bottom: 35px; }
+  .code-block { font-size: 1em; }
 }
