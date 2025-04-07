@@ -2,7 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #000;
     font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    overflow: hidden;
   }
   
   .soderzh {
@@ -35,6 +38,8 @@ html, body {
     align-items: center;
     width: 40px;
     height: 40px;
+    color: #000;
+    text-decoration: none;
     background-color: #f0f0f0;
     border-radius: 5px;
     font-size: 18px;
@@ -49,7 +54,7 @@ html, body {
  
   .hint {
     font-size: 1.2em;
-    color: #333;
+    color: #dcdcdc;
     margin-left: 20px;
     text-align: left;
     font-weight: bold;
@@ -57,61 +62,62 @@ html, body {
   
   @media (max-width: 1080px) {
     h1 {
-      font-size: 1.5em;
+      font-size: 2em;
     }
   
     .keyboard {
-      grid-template-columns: repeat(8, 50px);
+      grid-template-columns: repeat(8, 60px);
     }
   
     .key {
-      width: 50px;
-      height: 50px;
-      font-size: 20px;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
     }
   
     .hint {
-      font-size: 1em;
+      font-size: 1.2em;
     }
   }
   
   @media (max-width: 768px) {
     h1 {
-      font-size: 1.2em;
+      font-size: 1.8em;
     }
   
     .keyboard {
-      grid-template-columns: repeat(6, 45px);
+      grid-template-columns: repeat(6, 55px);
     }
   
     .key {
-      width: 45px;
-      height: 45px;
-      font-size: 16px;
+      width: 55px;
+      height: 55px;
+      font-size: 20px;
     }
   
     .hint {
-      font-size: 1em;
+      font-size: 1.1em;
     }
   }
   
   @media (max-width: 480px) {
     h1 {
-      font-size: 1em;
+      font-size: 1.5em;
     }
   
     .keyboard {
-      grid-template-columns: repeat(4, 40px);
+      grid-template-columns: repeat(4, 50px);
     }
   
     .key {
-      width: 40px;
-      height: 40px;
-      font-size: 14px;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
     }
   
     .hint {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
+  
   
