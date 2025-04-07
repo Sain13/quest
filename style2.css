@@ -1,104 +1,111 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-  }
-  
-  .soderzh {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    overflow: auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0a0a0a; /* добавим тёмный фон для хакерского вайба */
+  color: #f0f0f0;
+}
+
+.soderzh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ВЫРАВНИВАНИЕ ПО ГОРИЗОНТАЛИ */
+  padding: 40px;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 1.5em;
+  color: #aaaaaa;
+  margin-bottom: 30px;
+}
+
+.task-text {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.code-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  overflow-x: auto;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0,255,0,0.1);
+}
+
+.code-block {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3em;
+  color: #dcdcdc;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.keyword {
+  color: #569cd6;
+}
+
+.number {
+  color: #b5cea8;
+}
+
+.string {
+  color: #d69d85;
+}
+
+.function {
+  color: #dcdcaa;
+}
+
+@media (max-width: 768px) {
   h1 {
     font-size: 2em;
-    margin-bottom: 10px;
   }
-  
+
+  .subtext {
+    font-size: 1.3em;
+  }
+
+  .task-text {
+    font-size: 1.6em;
+  }
+
+  .code-block {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
   .subtext {
     font-size: 1.2em;
-    color: #666;
-    margin-bottom: 20px;
   }
-  
+
   .task-text {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.4em;
   }
-  
-  .code-container {
-    width: 100%;
-    max-width: 800px;
-    margin-top: 20px;
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    overflow-x: auto;
-    text-align: left;
-  }
-  
+
   .code-block {
-    font-family: 'Courier New', monospace;
-    font-size: 1.1em;
-    color: #dcdcdc;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin: 0;
-    line-height: 1.5;
+    font-size: 1em;
   }
-  
-  .keyword {
-    color: #569cd6;
-  }
-  
-  .number {
-    color: #b5cea8;
-  }
-  
-  .string {
-    color: #d69d85;
-  }
-  
-  .function {
-    color: #dcdcaa;
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 1.5em;
-    }
-  
-    .subtext {
-      font-size: 1em;
-    }
-  
-    .task-text {
-      font-size: 1.2em;
-    }
-  
-    .code-block {
-      font-size: 0.9em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1.2em;
-    }
-  
-    .subtext {
-      font-size: 0.9em;
-    }
-  
-    .task-text {
-      font-size: 1em;
-    }
-  
-    .code-block {
-      font-size: 0.8em;
-    }
-  }
-  
+}
