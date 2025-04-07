@@ -4,7 +4,7 @@ html, body {
   font-family: Arial, sans-serif;
   height: 100%;
   overflow: hidden;
-  background-color: #0a0a0a; /* добавим тёмный фон для хакерского вайба */
+  background-color: #000;  
   color: #f0f0f0;
 }
 
@@ -12,7 +12,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* ВЫРАВНИВАНИЕ ПО ГОРИЗОНТАЛИ */
+  align-items: center; 
   padding: 40px;
   height: 100vh;
   text-align: center;
