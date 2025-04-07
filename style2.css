@@ -29,12 +29,12 @@ h1 {
 .subtext {
   font-size: 1.1em;
   color: #888;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .task-text {
   font-size: 1.7em;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .code-container {
