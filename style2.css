@@ -5,7 +5,6 @@ html, body {
   height: 100%;
   background-color: #0a0a0a;
   color: #f0f0f0;
-  overflow:hidden;
 }
 
 .soderzh {
@@ -28,21 +27,21 @@ h1 {
 }
 
 .subtext {
-  font-size: 1.1em;
-  color: #888;
-  margin-bottom: 30px;
+  font-size: 1.3em; /* Увеличиваем размер */
+  color: #7CFC00; /* Зеленый цвет */
+  margin-bottom: 40px; /* Увеличиваем отступ */
 }
 
 .task-text {
-  font-size: 1.7em;
-  margin-bottom: 40px;
+  font-size: 1.8em;
+  margin-bottom: 50px;
 }
 
 .code-container {
   width: 100%;
   max-width: 900px;
   background-color: #1e1e1e;
-  padding: 25px;
+  padding: 30px;
   border-radius: 12px;
   overflow-x: auto;
   text-align: left;
@@ -52,28 +51,29 @@ h1 {
 
 .code-block {
   font-family: 'Courier New', monospace;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #dcdcdc;
   white-space: pre-wrap;
   word-wrap: break-word;
-  margin: 20px 0;
+  margin: 30px 0; /* Увеличиваем отступы сверху и снизу */
   line-height: 1.6;
 }
 
+/* Зеленая подсветка хакерская */
 .keyword {
-  color: #4FC3F7;
+  color: #00FF00; /* Ярко зеленый */
 }
 
 .number {
-  color: #A5D6A7;
+  color: #00FF00;
 }
 
 .string {
-  color: #FFAB91;
+  color: #00FF00;
 }
 
 .function {
-  color: #FFF59D;
+  color: #00FF00;
 }
 
 @media (max-width: 768px) {
@@ -83,23 +83,23 @@ h1 {
   }
 
   .subtext {
-    font-size: 1.1em;
+    font-size: 1.2em; /* Увеличиваем для телефонов */
   }
 
   .task-text {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 30px;
   }
 
   .code-container {
     max-width: 100%;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 25px;
+    margin-bottom: 50px;
   }
 
   .code-block {
-    font-size: 1.2em;
-    margin: 15px 0;
+    font-size: 1.3em;
+    margin: 25px 0;
   }
 }
 
@@ -110,21 +110,21 @@ h1 {
   }
 
   .subtext {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .task-text {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 20px;
   }
 
   .code-container {
-    padding: 15px;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
   }
 
   .code-block {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 20px 0;
   }
 }
