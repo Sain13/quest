@@ -10,6 +10,9 @@ body {
     padding: 2em;
     min-height: 100vh;
     text-align: center;
+    overflow:hidden;
+    max-widht:600px;
+    
     }
 
     h1 {
@@ -18,7 +21,7 @@ body {
     }
 
     p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 1.5em;
     }
 
