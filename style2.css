@@ -12,29 +12,35 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
+  padding: 20px; /* уменьшены отступы */
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
   overflow: auto;
+  width: 100%; /* делает ширину на всю страницу */
 }
 
 h1 {
   font-size: 2.2em;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 10px; /* уменьшены отступы */
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
 p {
   font-size: 1.5em;
   margin-bottom: 10px;
+  white-space: nowrap; /* это предотвратит перенос текста на новую строку */
+  overflow: hidden;
+  text-overflow: ellipsis; /* если текст длинный, будет многоточие */
+  width: 100%; /* займет всю ширину контейнера */
+  word-wrap: break-word; /* позволяет словам не ломаться, но переноситься */
+  word-break: break-word; /* добавляет переносы, если слово слишком длинное */
 }
 
 .hint {
   font-size: 1.2em;
   color: #dcdcdc;
-
   text-align: left;
   font-weight: bold;
 }
@@ -48,7 +54,7 @@ p {
     font-size: 1.3em;
   }
 }
- 
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1.4em;
@@ -59,12 +65,14 @@ p {
   }
 
   .soderzh {
-    padding: 20px 10px;
+    padding: 10px; /* уменьшены отступы */
   }
+
   .hint {
     font-size: 0.9em;
-}
+  }
+
   .hint1 {
-  font-size: 0.75em;
-}
+    font-size: 0.75em;
+  }
 }
