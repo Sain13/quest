@@ -17,6 +17,7 @@ html, body {
   min-height: 100vh;
   text-align: center;
   overflow: auto;
+  max-width: 100%;
 }
 
 h1 {
