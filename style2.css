@@ -5,7 +5,6 @@ html, body {
   height: 100%;
   background-color: #0a0a0a;
   color: #f0f0f0;
-  overflow:hidden;
 }
 
 .soderzh {
@@ -13,46 +12,92 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* уменьшены отступы */
+  padding: 50px 20px;
   box-sizing: border-box;
   min-height: 100vh;
   text-align: center;
   overflow: auto;
-  width: 100%; /* делает ширину на всю страницу */
 }
 
 h1 {
   font-size: 2.2em;
-  margin-top: 10px; /* уменьшены отступы */
-  margin-bottom: 35px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-weight: bold;
 }
 
 p {
   font-size: 1.5em;
   margin-bottom: 10px;
-  white-space: nowrap; /* это предотвратит перенос текста на новую строку */
-  overflow: hidden;
- 
-  width: 100%; /* займет всю ширину контейнера */
-  word-wrap: break-word; /* позволяет словам не ломаться, но переноситься */
-  word-break: break-word; /* добавляет переносы, если слово слишком длинное */
 }
 
-.hint {
-  font-size: 1.2em;
-  margin-top:15px;
-  color: #dcdcdc;
-  margin-left:20px;
-  text-align: left;
+.button {
+  font-size: 1.1em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 8px;
+  background: #00c853;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  }
+
+  .button:hover {
+  background: #00b342;
+  }
+  .hint1 {
+    font-size: 1em;
+    color: #dcdcdc;
+    text-align: left;
+    font-weight: bold;
+ 
+  }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);  
+  padding-top: 60px;
+}
+
+/* Модальное окно с подсказкой */
+.modal-content {
+  background-color: #0a0a0a;
+  color: white;
+  font-size: 1.5em;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7);  
+  width: 50%;  
+  max-height: 50vh;  
+  overflow-y: auto;
+  text-align: center;
+  margin:  auto;  
+}
+
+.modal.open {
+  display: block;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
 }
-.hint1 {
-  font-size: 1em;
-  margin-left:20px;
-  color: #dcdcdc;
-  text-align: left;
-  font-weight: bold;
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -63,8 +108,11 @@ p {
   p {
     font-size: 1.3em;
   }
+  .soderzh {
+    padding: 20px 15px;
+  }
 }
-
+ 
 @media (max-width: 480px) {
   h1 {
     font-size: 1.4em;
@@ -75,14 +123,10 @@ p {
   }
 
   .soderzh {
-    padding: 10px; /* уменьшены отступы */
+    padding: 20px 10px;
   }
-
-  .hint {
-    font-size: 0.9em;
-  }
-
-  .hint1 {
-    font-size: 0.7em;
-  }
+ 
 }
+ 
+
+ 
