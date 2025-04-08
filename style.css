@@ -11,14 +11,14 @@ body {
     padding: 2em;
     min-height: 100vh;
     text-align: center;
-    overflow:hidden;
+    user-select: none;
     max-widht:600px;
     
     }
 
     h1 {
     font-size: 1.7em;
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     }
 
     p {
