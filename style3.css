@@ -23,19 +23,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-.task-text {
-  font-size: 1.8em;
-  margin-bottom: 10px; /* Уменьшаем отступ от текста до кода */
-}
-
-.description {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 10px; /* Уменьшаем отступ от текста до кода */
-}
+ 
 
 .code-container {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
@@ -72,14 +63,7 @@ h1 {
     font-size: 1.5em;
   }
 
-  .description {
-    font-size: 1em;
-  }
-
-  .task-text {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-  }
+ 
 
   .code-item {
     font-size: 1.2em;
@@ -96,14 +80,7 @@ h1 {
     font-size: 1.3em;
   }
 
-  .description {
-    font-size: 0.9em;
-  }
-
-  .task-text {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
+ 
 
   .code-item {
     font-size: 1em;
