@@ -53,7 +53,7 @@ h1 {
   font-size: 1.2em;
   color: #dcdcdc;
   margin-left: 20px;
-  margin-top: 40px; /* Увеличиваем отступ между текстом и подсказкой */
+  margin-top: 40px;  
   text-align: left;
   font-weight: bold;
 }
@@ -94,5 +94,9 @@ p {
   .hint {
     font-size: 0.9em;
     margin-top: 30px;
+  }
+  .p {
+    font-size: 1.05em;
+ 
   }
 }
