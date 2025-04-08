@@ -31,7 +31,14 @@ p {
   margin-bottom: 10px;
 }
 
- 
+.hint {
+  font-size: 1.2em;
+  color: #dcdcdc;
+
+  text-align: left;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.6em;
@@ -54,4 +61,10 @@ p {
   .soderzh {
     padding: 20px 10px;
   }
+  .hint {
+    font-size: 0.9em;
+}
+  .hint1 {
+  font-size: 0.75em;
+}
 }
